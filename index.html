@@ -393,55 +393,6 @@
             font-size: 1rem;
         }
 
-        .notification-edit {
-            width: 100%;
-            min-height: 80px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            padding: 10px;
-            font-family: inherit;
-            resize: vertical;
-            margin-bottom: 15px;
-            transition: border-color 0.3s ease;
-        }
-
-        .notification-edit:focus {
-            border-color: #FF0000;
-            outline: none;
-        }
-
-        .notification-image-url {
-            width: 100%;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            padding: 10px;
-            font-family: inherit;
-            margin-bottom: 15px;
-            transition: border-color 0.3s ease;
-        }
-
-        .notification-image-url:focus {
-            border-color: #FF0000;
-            outline: none;
-        }
-
-        .notification-save {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(135deg, #FF0000, #FF3333);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .notification-save:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
-        }
-
         /* Music Popup */
         .music-popup {
             position: fixed;
@@ -585,7 +536,7 @@
             66% { transform: translateY(5px) rotate(-1deg); }
         }
 
-        .hero-content {
+                .hero-content {
             max-width: 900px;
             animation: slideInFromBottom 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
             position: relative;
@@ -1114,7 +1065,7 @@
             text-decoration: none;
         }
 
-        /* Footer dengan animasi yang lebih kompleks */
+                /* Footer dengan animasi yang lebih kompleks */
         .footer {
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%);
             color: white;
@@ -1459,9 +1410,8 @@
             <span class="notification-close" id="notification-close">&times;</span>
         </div>
         <div class="notification-content">
-            <textarea class="notification-edit" id="notification-edit" placeholder="Edit pemberitahuan di sini...">Selamat datang di HOT KLENGER! Nikmati promo spesial hari ini dengan diskon 20% untuk semua menu. Jangan lewatkan kesempatan ini!</textarea>
-            <input type="text" class="notification-image-url" id="notification-image-url" placeholder="Masukkan URL gambar (opsional)">
-            <button class="notification-save" id="notification-save">Simpan Perubahan</button>
+            <img src="https://yelping-plum-tddcxzajju.edgeone.app/Merah%20Vintage%20Ilustratif%20Sosis%20Solo%20Logo.png" alt="Notification Image">
+            <p>Selamat datang di HOT KLENGER! Nikmati promo spesial hari ini dengan diskon 20% untuk semua menu. Jangan lewatkan kesempatan ini!</p>
         </div>
     </div>
 
@@ -1542,445 +1492,398 @@
                         <span class="price">Rp 35,000</span>
                         <button class="btn-secondary view-btn" data-img="https://example.com/sate-ayam.jpg">View</button>
                         <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Sate%20Ayam%20Bumbu%20Kacang" class="btn-secondary" target="_blank">Pesan</a>
-
-                        </div> 
-                    <!-- MENU BEST SELLER 5: Es Teh Manis --> 
-                    <div class="product-card"> 
-                        <img src="https://example.com/es-teh.jpg" alt="Es Teh Manis Segar"> 
-                        <h3>Es Teh Manis Segar</h3> <p>Minuman es teh manis yang menyegarkan, cocok untuk menemani hidangan.</p> 
-                        <div class="product-footer"> 
-                            <span class="price">Rp 10,000</span> 
-                            <button class="btn-secondary view-btn" data-img="https://example.com/es-teh.jpg">View</button> 
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Es%20Teh%20Manis%20Segar" class="btn-secondary" target="_blank">Pesan</a> 
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
+                    </div>
+                </div>
+                <!-- MENU BEST SELLER 5: Es Teh Manis -->
+                <div class="product-card">
+                    <img src="https://example.com/es-teh.jpg" alt="Es Teh Manis Segar">
+                    <h3>Es Teh Manis Segar</h3>
+                    <p>Minuman es teh manis yang menyegarkan, cocok untuk menemani hidangan.</p>
+                    <div class="product-footer">
+                        <span class="price">Rp 10,000</span>
+                        <button class="btn-secondary view-btn" data-img="https://example.com/es-teh.jpg">View</button>
+                        <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Es%20Teh%20Manis%20Segar" class="btn-secondary" target="_blank">Pesan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Produk Section -->
-<section id="produk" class="products section-fade-in">
-    <div class="container">
-        <h2 class="text-center mb-20">Menu Lengkap Kami</h2>
-        <p class="text-center mb-40">Jelajahi menu lainnya yang tersedia</p>
-        <div class="categories">
-            <!-- KATEGORI 1: Makanan Utama -->
-            <div class="category">
-                <h3>Makanan Utama</h3>
-                <div class="products-grid" id="products-grid">
-                    <div class="product-card">
-                        <img src="https://example.com/nasi-uduk.jpg" alt="Nasi Uduk">
-                        <h4>Nasi Uduk</h4>
-                        <p>Nasi uduk dengan lauk ayam dan telur, gurih dan lezat.</p>
-                        <div class="product-footer">
-                            <span class="price">Rp 20,000</span>
-                            <button class="btn-secondary view-btn" data-img="https://example.com/nasi-uduk.jpg">View</button>
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Nasi%20Uduk" class="btn-secondary" target="_blank">Pesan</a>
+    <section id="produk" class="products section-fade-in">
+        <div class="container">
+            <h2 class="text-center mb-20">Menu Lengkap Kami</h2>
+            <p class="text-center mb-40">Jelajahi menu lainnya yang tersedia</p>
+            <div class="categories">
+                <!-- KATEGORI 1: Makanan Utama -->
+                <div class="category">
+                    <h3>Makanan Utama</h3>
+                    <div class="products-grid" id="products-grid">
+                        <div class="product-card">
+                            <img src="https://example.com/nasi-uduk.jpg" alt="Nasi Uduk">
+                                                        <h4>Nasi Uduk</h4>
+                            <p>Nasi uduk dengan lauk ayam dan telur, gurih dan lezat.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp 20,000</span>
+                                <button class="btn-secondary view-btn" data-img="https://example.com/nasi-uduk.jpg">View</button>
+                                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Nasi%20Uduk" class="btn-secondary" target="_blank">Pesan</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://example.com/ayam-goreng.jpg" alt="Ayam Goreng">
-                        <h4>Ayam Goreng</h4>
-                        <p>Ayam goreng crispy dengan bumbu rempah yang khas.</p>
-                        <div class="product-footer">
-                            <span class="price">Rp 25,000</span>
-                            <button class="btn-secondary view-btn" data-img="https://example.com/ayam-goreng.jpg">View</button>
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Ayam%20Goreng" class="btn-secondary" target="_blank">Pesan</a>
+                        <div class="product-card">
+                            <img src="https://example.com/ayam-goreng.jpg" alt="Ayam Goreng">
+                            <h4>Ayam Goreng</h4>
+                            <p>Ayam goreng crispy dengan bumbu rempah yang khas.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp 25,000</span>
+                                <button class="btn-secondary view-btn" data-img="https://example.com/ayam-goreng.jpg">View</button>
+                                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Ayam%20Goreng" class="btn-secondary" target="_blank">Pesan</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://example.com/ikan-bakar.jpg" alt="Ikan Bakar">
-                        <h4>Ikan Bakar</h4>
-                        <p>Ikan bakar dengan sambal yang pedas dan nikmat.</p>
-                        <div class="product-footer">
-                            <span class="price">Rp 40,000</span>
-                            <button class="btn-secondary view-btn" data-img="https://example.com/ikan-bakar.jpg">View</button>
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Ikan%20Bakar" class="btn-secondary" target="_blank">Pesan</a>
+                        <div class="product-card">
+                            <img src="https://example.com/ikan-bakar.jpg" alt="Ikan Bakar">
+                            <h4>Ikan Bakar</h4>
+                            <p>Ikan bakar dengan sambal yang pedas dan nikmat.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp 40,000</span>
+                                <button class="btn-secondary view-btn" data-img="https://example.com/ikan-bakar.jpg">View</button>
+                                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Ikan%20Bakar" class="btn-secondary" target="_blank">Pesan</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://example.com/soto-ayam.jpg" alt="Soto Ayam">
-                        <h4>Soto Ayam</h4>
-                        <p>Soto ayam dengan kuah bening dan pelengkap yang lengkap.</p>
-                        <div class="product-footer">
-                            <span class="price">Rp 22,000</span>
-                            <button class="btn-secondary view-btn" data-img="https://example.com/soto-ayam.jpg">View</button>
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Soto%20Ayam" class="btn-secondary" target="_blank">Pesan</a>
+                        <div class="product-card">
+                            <img src="https://example.com/soto-ayam.jpg" alt="Soto Ayam">
+                            <h4>Soto Ayam</h4>
+                            <p>Soto ayam dengan kuah bening dan pelengkap yang lengkap.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp 22,000</span>
+                                <button class="btn-secondary view-btn" data-img="https://example.com/soto-ayam.jpg">View</button>
+                                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Soto%20Ayam" class="btn-secondary" target="_blank">Pesan</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://example.com/rendang.jpg" alt="Rendang Daging">
-                        <h4>Rendang Daging</h4>
-                        <p>Rendang daging sapi yang empuk dan kaya bumbu.</p>
-                        <div class="product-footer">
-                            <span class="price">Rp 50,000</span>
-                            <button class="btn-secondary view-btn" data-img="https://example.com/rendang.jpg">View</button>
-                            <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Rendang%20Daging" class="btn-secondary" target="_blank">Pesan</a>
+                        <div class="product-card">
+                            <img src="https://example.com/rendang.jpg" alt="Rendang Daging">
+                            <h4>Rendang Daging</h4>
+                            <p>Rendang daging sapi yang empuk dan kaya bumbu.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp 50,000</span>
+                                <button class="btn-secondary view-btn" data-img="https://example.com/rendang.jpg">View</button>
+                                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20memesan%20Rendang%20Daging" class="btn-secondary" target="_blank">Pesan</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Tentang Section -->
-<section id="tentang" class="about section-fade-in">
-    <div class="container">
-        <h2>Tentang HOT KLENGER</h2>
-        <p>HOT KLENGER adalah destinasi kuliner yang menghadirkan pengalaman makan yang tak terlupakan. Kami berkomitmen untuk menyajikan makanan berkualitas tinggi dengan cita rasa autentik, menggunakan bahan-bahan segar dan resep turun-temurun yang telah disempurnakan.</p>
-        <div class="about-grid">
-            <div class="about-card">
-                <h3>Visi Kami</h3>
-                <p>Menjadi restoran terdepan yang menginspirasi pecinta kuliner dengan inovasi rasa, pelayanan prima, dan komitmen terhadap keberlanjutan lingkungan, menciptakan kenangan indah di setiap suapan.</p>
-            </div>
-            <div class="about-card">
-                <h3>Misi Kami</h3>
-                <p>Menyediakan hidangan lezat dengan bahan-bahan premium, melatih koki berbakat, dan membangun komunitas pecinta makanan melalui pengalaman bersantap yang luar biasa dan ramah lingkungan.</p>
+    <!-- Tentang Section -->
+    <section id="tentang" class="about section-fade-in">
+        <div class="container">
+            <h2>Tentang HOT KLENGER</h2>
+            <p>HOT KLENGER adalah destinasi kuliner yang menghadirkan pengalaman makan yang tak terlupakan. Kami berkomitmen untuk menyajikan makanan berkualitas tinggi dengan cita rasa autentik, menggunakan bahan-bahan segar dan resep turun-temurun yang telah disempurnakan.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi restoran terdepan yang menginspirasi pecinta kuliner dengan inovasi rasa, pelayanan prima, dan komitmen terhadap keberlanjutan lingkungan, menciptakan kenangan indah di setiap suapan.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Misi Kami</h3>
+                    <p>Menyediakan hidangan lezat dengan bahan-bahan premium, melatih koki berbakat, dan membangun komunitas pecinta makanan melalui pengalaman bersantap yang luar biasa dan ramah lingkungan.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Kontak Section -->
-<section id="kontak" class="contact section-fade-in">
-    <div class="container">
-        <h2>HUBUNGI KAMI</h2>
-        <p>Siap untuk menikmati hidangan lezat? Hubungi kami sekarang!</p>
-        <div class="contact-info">
-            <p>WhatsApp: +62 856-9244-0712</p>
-            <p>Jam Operasional: 10:00 - 22:00 WIB</p>
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-                <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20menu%20HOT%20KLENGER" class="btn-primary" target="_blank">Kontak WhatsApp</a>
-                <a href="https://www.instagram.com/hot.klengerr?igsh=OTQ4NzlsaHR0aWF6" class="btn-secondary" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact section-fade-in">
+        <div class="container">
+            <h2>HUBUNGI KAMI</h2>
+            <p>Siap untuk menikmati hidangan lezat? Hubungi kami sekarang!</p>
+            <div class="contact-info">
+                <p>WhatsApp: +62 856-9244-0712</p>
+                <p>Jam Operasional: 10:00 - 22:00 WIB</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+                    <a href="https://wa.me/6285692440712?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20menu%20HOT%20KLENGER" class="btn-primary" target="_blank">Kontak WhatsApp</a>
+                    <a href="https://www.instagram.com/hot.klengerr?igsh=OTQ4NzlsaHR0aWF6" class="btn-secondary" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <h3>HOT KLENGER</h3>
-                <p>Makanan lezat yang memanjakan lidah Anda. Kami hadir untuk memberikan pengalaman kuliner terbaik dengan cita rasa yang tak terlupakan.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>HOT KLENGER</h3>
+                    <p>Makanan lezat yang memanjakan lidah Anda. Kami hadir untuk memberikan pengalaman kuliner terbaik dengan cita rasa yang tak terlupakan.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produk">Menu Kami</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>WhatsApp: +62 856-9244-0712</li>
+                        <li>Buka: 10:00 - 22:00</li>
+                        <li>Setiap Hari</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#produk">Menu Kami</a></li>
-                    <li><a href="#tentang">Tentang Kami</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>WhatsApp: +62 856-9244-0712</li>
-                    <li>Buka: 10:00 - 22:00</li>
-                    <li>Setiap Hari</li>
-                </ul>
+            <div class="copyright">
+                <p>&copy; 2024 HOT KLENGER. All rights reserved. Made with ❤️ for food lovers.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 HOT KLENGER. All rights reserved. Made with ❤️ for food lovers.</p>
-        </div>
+    </footer>
+
+    <!-- Modal untuk View Gambar -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
     </div>
-</footer>
 
-<!-- Modal untuk View Gambar -->
-<div id="image-modal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modal-image">
-</div>
-
-<script>
-    // Loading Screen dengan animasi yang lebih cepat dan menarik
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            const loadingScreen = document.getElementById('loading-screen');
-            loadingScreen.style.opacity = '0';
+    <script>
+        // Loading Screen dengan animasi yang lebih cepat dan menarik
+        window.addEventListener('load', function() {
             setTimeout(function() {
-                loadingScreen.style.display = 'none';
-                // Show music popup after loading
+                const loadingScreen = document.getElementById('loading-screen');
+                loadingScreen.style.opacity = '0';
                 setTimeout(function() {
-                    document.getElementById('music-popup').style.display = 'block';
-                }, 500);
-            }, 800);
-        }, 1500); // 1.5 detik loading untuk efek yang lebih cepat
-    });
+                    loadingScreen.style.display = 'none';
+                    // Show music popup after loading
+                    setTimeout(function() {
+                        document.getElementById('music-popup').style.display = 'block';
+                    }, 500);
+                }, 800);
+            }, 1500); // 1.5 detik loading untuk efek yang lebih cepat
+        });
 
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Backsound dengan kontrol yang lebih baik
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-audio');
+            audio.volume = 0.1; // Volume lebih rendah untuk kenyamanan
+        });
+
+        // Smooth Scroll untuk semua link internal
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 70; // Offset untuk navbar fixed
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile Menu Toggle dengan animasi
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            // Animasi hamburger menu
+            this.classList.toggle('active');
+        });
+
+        // Tutup menu mobile saat klik link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Notification Popup
+        const notificationIcon = document.getElementById('nav-notification');
+        const notificationPopup = document.getElementById('notification-popup');
+        const notificationClose = document.getElementById('notification-close');
+
+        notificationIcon.addEventListener('click', function() {
+            notificationPopup.style.display = notificationPopup.style.display === 'block' ? 'none' : 'block';
+        });
+
+        notificationClose.addEventListener('click', function() {
+            notificationPopup.style.display = 'none';
+        });
+
+        // Music Popup
+        const musicPopup = document.getElementById('music-popup');
+        const musicYes = document.getElementById('music-yes');
+        const musicNo = document.getElementById('music-no');
+        const youtubePlayer = document.getElementById('youtube-player');
+        const youtubeIframe = document.getElementById('youtube-iframe');
+        const stopMusicBtn = document.getElementById('stop-music-btn');
+
+        musicYes.addEventListener('click', function() {
+            musicPopup.style.display = 'none';
+            // Set YouTube video ID
+            const videoId = '1hNaB1KvW8E'; // From the provided link
+            youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}`;
+            youtubePlayer.style.display = 'block';
+            stopMusicBtn.style.display = 'block';
+        });
+
+        musicNo.addEventListener('click', function() {
+            musicPopup.style.display = 'none';
+        });
+
+        stopMusicBtn.addEventListener('click', function() {
+            youtubeIframe.src = '';
+            youtubePlayer.style.display = 'none';
+            stopMusicBtn.style.display = 'none';
+        });
+
+        // Intersection Observer untuk animasi fade-in sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe semua sections kecuali hero
+        document.querySelectorAll('section:not(#home)').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Update active nav link saat scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll-triggered animations untuk elemen individual
+        const scrollObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -10px 0px'
+        });
+
+        // Observe elemen dengan class scroll-reveal
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            scrollObserver.observe(el);
+        });
+
+        // Tambahkan efek parallax pada background hero
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+            }
+        });
+
+        // Efek hover pada product cards dengan delay
+        document.querySelectorAll('.product-card').forEach((card, index) => {
+            card.style.animationDelay = (index * 0.1) + 's';
+        });
+
+        // Modal untuk view gambar
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        // Fungsi untuk membuka modal
+        function openModal(imgSrc) {
+            modal.style.display = 'block';
+            modalImg.src = imgSrc;
         }
-    });
 
-    // Backsound dengan kontrol yang lebih baik
-    document.addEventListener('DOMContentLoaded', function() {
-        const audio = document.getElementById('background-audio');
-        audio.volume = 0.1; // Volume lebih rendah untuk kenyamanan
-    });
-
-    // Smooth Scroll untuk semua link internal
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offsetTop = target.offsetTop - 70; // Offset untuk navbar fixed
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Mobile Menu Toggle dengan animasi
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        // Animasi hamburger menu
-        this.classList.toggle('active');
-    });
-
-    // Tutup menu mobile saat klik link
-    navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        });
-    });
-
-    // Notification Popup
-    const notificationIcon = document.getElementById('nav-notification');
-    const notificationPopup = document.getElementById('notification-popup');
-    const notificationClose = document.getElementById('notification-close');
-    const notificationEdit = document.getElementById('notification-edit');
-    const notificationImageUrl = document.getElementById('notification-image-url');
-    const notificationSave = document.getElementById('notification-save');
-    const notificationContent = document.querySelector('.notification-content');
-
-    // Load saved notification data
-    const savedText = localStorage.getItem('notificationText') || 'Selamat datang di HOT KLENGER! Nikmati promo spesial hari ini dengan diskon 20% untuk semua menu. Jangan lewatkan kesempatan ini!';
-    const savedImageUrl = localStorage.getItem('notificationImageUrl') || '';
-
-    notificationEdit.value = savedText;
-    notificationImageUrl.value = savedImageUrl;
-
-    // Function to update notification display
-    function updateNotificationDisplay() {
-        const text = notificationEdit.value;
-        const imageUrl = notificationImageUrl.value;
-
-        // Clear existing content except inputs and button
-        const existingImg = notificationContent.querySelector('img');
-        const existingP = notificationContent.querySelector('p:not(.notification-edit):not(.notification-image-url)');
-
-        if (existingImg) existingImg.remove();
-        if (existingP) existingP.remove();
-
-        if (imageUrl) {
-            const img = document.createElement('img');
-            img.src = imageUrl;
-            img.alt = 'Notification Image';
-            notificationContent.insertBefore(img, notificationEdit);
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            modal.style.display = 'none';
         }
 
-        const p = document.createElement('p');
-        p.textContent = text;
-        notificationContent.insertBefore(p, notificationEdit);
-    }
-
-    // Initial display
-    updateNotificationDisplay();
-
-    notificationIcon.addEventListener('click', function() {
-        notificationPopup.style.display = notificationPopup.style.display === 'block' ? 'none' : 'block';
-    });
-
-    notificationClose.addEventListener('click', function() {
-        notificationPopup.style.display = 'none';
-    });
-
-    notificationSave.addEventListener('click', function() {
-        const text = notificationEdit.value;
-        const imageUrl = notificationImageUrl.value;
-
-        localStorage.setItem('notificationText', text);
-        localStorage.setItem('notificationImageUrl', imageUrl);
-
-        updateNotificationDisplay();
-        alert('Pemberitahuan berhasil disimpan!');
-    });
-
-    // Music Popup
-    const musicPopup = document.getElementById('music-popup');
-    const musicYes = document.getElementById('music-yes');
-    const musicNo = document.getElementById('music-no');
-    const youtubePlayer = document.getElementById('youtube-player');
-    const youtubeIframe = document.getElementById('youtube-iframe');
-    const stopMusicBtn = document.getElementById('stop-music-btn');
-
-    musicYes.addEventListener('click', function() {
-        musicPopup.style.display = 'none';
-        // Set YouTube video ID
-        const videoId = 'w5hWlSvBLTg'; // From the provided link
-        youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}`;
-        youtubePlayer.style.display = 'block';
-        stopMusicBtn.style.display = 'block';
-    });
-
-    musicNo.addEventListener('click', function() {
-        musicPopup.style.display = 'none';
-    });
-
-    stopMusicBtn.addEventListener('click', function() {
-        youtubeIframe.src = '';
-        youtubePlayer.style.display = 'none';
-        stopMusicBtn.style.display = 'none';
-    });
-
-    // Intersection Observer untuk animasi fade-in sections
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('section-fade-in');
-            }
+        // Event listener untuk tombol view
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const imgSrc = this.getAttribute('data-img');
+                openModal(imgSrc);
+            });
         });
-    }, observerOptions);
 
-    // Observe semua sections kecuali hero
-    document.querySelectorAll('section:not(#home)').forEach(section => {
-        observer.observe(section);
-    });
+        // Tutup modal saat klik close button
+        closeBtn.addEventListener('click', closeModal);
 
-    // Update active nav link saat scroll
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
+        // Tutup modal saat klik di luar gambar
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
             }
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
-                link.classList.add('active');
+        // Tutup modal dengan tombol ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
             }
         });
-    });
 
-    // Scroll-triggered animations untuk elemen individual
-    const scrollObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -10px 0px'
-    });
+        // Auto-play video jika ada (untuk future enhancement)
+        // const videos = document.querySelectorAll('video');
+        // videos.forEach(video => {
+        //     video.addEventListener('canplay', function() {
+        //         this.play();
+        //     });
+        // });
 
-    // Observe elemen dengan class scroll-reveal
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-        scrollObserver.observe(el);
-    });
+        // Prevent right-click untuk melindungi konten (opsional)
+        // document.addEventListener('contextmenu', function(e) {
+        //     e.preventDefault();
+        // });
 
-    // Tambahkan efek parallax pada background hero
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        if (hero) {
-            hero.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
-        }
-    });
-
-    // Efek hover pada product cards dengan delay
-    document.querySelectorAll('.product-card').forEach((card, index) => {
-        card.style.animationDelay = (index * 0.1) + 's';
-    });
-
-    // Modal untuk view gambar
-    const modal = document.getElementById('image-modal');
-    const modalImg = document.getElementById('modal-image');
-    const closeBtn = document.getElementsByClassName('close')[0];
-
-    // Fungsi untuk membuka modal
-    function openModal(imgSrc) {
-        modal.style.display = 'block';
-        modalImg.src = imgSrc;
-    }
-
-    // Fungsi untuk menutup modal
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    // Event listener untuk tombol view
-    document.querySelectorAll('.view-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const imgSrc = this.getAttribute('data-img');
-        openModal(imgSrc);
-    });
-});
-
-// Tutup modal saat klik close button
-closeBtn.addEventListener('click', closeModal);
-
-// Tutup modal saat klik di luar gambar
-modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-        closeModal();
-    }
-});
-
-// Tutup modal dengan tombol ESC
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
-        closeModal();
-    }
-});
-
-// Auto-play video jika ada (untuk future enhancement)
-// const videos = document.querySelectorAll('video');
-// videos.forEach(video => {
-//     video.addEventListener('canplay', function() {
-//         this.play();
-//     });
-// });
-
-// Prevent right-click untuk melindungi konten (opsional)
-// document.addEventListener('contextmenu', function(e) {
-//     e.preventDefault();
-// });
-
-// Analytics tracking (opsional - bisa ditambahkan Google Analytics)
-// function trackPageView() {
-//     // Implementasi tracking
-// }
-// trackPageView();
+        // Analytics tracking (opsional - bisa ditambahkan Google Analytics)
+        // function trackPageView() {
+        //     // Implementasi tracking
+        // }
+        // trackPageView();
     </script>
 
 </body>
 </html>
+
