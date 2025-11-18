@@ -1705,7 +1705,14 @@
                         document.getElementById('notification-popup').style.display = 'block';
                     }, 500);
                 }, 800);
-            }, 3000); // 3 detik loading untuk efek yang lebih menarik
+            }, 2000); // 3 detik loading untuk efek yang lebih menarik
+            // Fallback: Hide loading jika ada error atau terlalu lama
+    setTimeout(function() {
+        if (loadingScreen.style.display !== 'none') {
+            loadingScreen.style.display = 'none';
+            document.getElementById('notification-popup').style.display = 'block';
+        }
+    }, 5000); // Maksimal 5 detik
         });
 
         // Navbar scroll effect
